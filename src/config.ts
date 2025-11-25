@@ -77,7 +77,7 @@ export const profileConfig: ProfileConfig = {
 		{
 			name: "GitHub",
 			icon: "fa6-brands:github",
-			url: "https://github.com/zhurui12345",
+			url: "https://github.com/kmh1145",
 		},
 	],
 };
