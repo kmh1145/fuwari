@@ -1,36 +1,18 @@
 ---
 
-import { getEntry, render } from "astro:content";
-import Markdown from "@components/misc/Markdown.astro";
-import I18nKey from "../i18n/i18nKey";
-import { i18n } from "../i18n/translation";
-import MainGridLayout from "../layouts/MainGridLayout.astro";
+import MainGridLayout from '../layouts/MainGridLayout.astro'
+
+import { getEntry } from 'astro:content'
+import Markdown from '@components/misc/Markdown.astro'
+import I18nKey from '../i18n/i18nKey'
+import { i18n } from '../i18n/translation'
 
 const friendsPost = await getEntry('spec', 'friends')
-
-if (!aboutPost) {
-	throw new Error("About page content not found");
-}
-
-const { Content } = await friendsPost.render()
----
-<MainGridLayout title={i18n(I18nKey.friends)} description={i18n(I18nKey.friends)}>
-    <div class="flex w-full rounded-[var(--radius-large)] overflow-hidden relative min-h-32">
-        <div class="card-base z-10 px-9 py-6 relative w-full ">
-            <Markdown class="mt-2">
-                <Content />
-            </Markdown>
-        </div>
-    </div>
-</MainGridLayout>
-
-const friendsPost = await getEntry("spec", "friends");
-
 if (!friendsPost) {
-  throw new Error("About page content not found");
+  throw new Error('Friend page content not found')
 }
+const { Content } = await friendsPost.render()
 
-const { Content } = await render(friendsPost);
 const items = [
   {
     title: 'Astro',
@@ -44,22 +26,33 @@ const items = [
 <MainGridLayout title={i18n(I18nKey.friends)} description={i18n(I18nKey.friends)}>
   <div class="flex w-full rounded-[var(--radius-large)] overflow-hidden relative min-h-32">
     <div class="card-base z-10 px-9 py-6 relative w-full ">
-      <div class="grid grid-cols-1 sm:grid-cols-2 gap-x-6 gap-y-8 my-4" id="friends-list">
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-x-8 gap-y-10 my-4">
         {items.map((item) => (
-          <div class="friend-card flex flex-nowrap items-stretch h-28 gap-4 rounded-[var(--radius-large)]">
-            <div class="w-28 h-28 flex-shrink-0 rounded-lg overflow-hidden bg-zinc-200 dark:bg-zinc-900">
-              <img src={item.imgurl} alt="站点头像" class="w-full h-full object-cover" />
+          <a href={item.siteurl} target="_blank" rel="noopener noreferrer"
+            class="group rounded-3xl bg-white/80 dark:bg-zinc-900/80 shadow-xl hover:shadow-2xl transition-all duration-300 p-6 flex items-center gap-6 border border-zinc-100 dark:border-zinc-800 hover:-translate-y-1"
+          >
+            <div class="flex-shrink-0">
+              <img src={item.imgurl} alt="站点头像" class="w-20 h-20 rounded-full object-cover shadow-md border-4 border-white dark:border-zinc-800 group-hover:scale-105 transition-transform duration-300" />
             </div>
-            <div class="grow w-full">
-              <div class="font-bold transition text-lg text-neutral-900 dark:text-neutral-100 mb-1">{item.title}</div>
-              <div class="text-50 text-sm font-medium">{item.desc}</div>
+            <div class="flex-1 min-w-0">
+              <div class="flex items-center gap-2 mb-1">
+                <span class="text-2xl font-bold text-zinc-900 dark:text-zinc-100 group-hover:text-[var(--primary)] transition-colors duration-300 leading-tight">{item.title}</span>
+                {item.tags && item.tags.length > 0 && (
+                  <span class="inline-flex items-center gap-1 text-base px-3 py-1 rounded-full bg-[var(--primary)]/10 text-[var(--primary)] font-semibold tracking-wide">
+                    {item.tags.join(' ')}
+                  </span>
+                )}
+              </div>
+              <div class="text-zinc-600 dark:text-zinc-300 text-base mb-2 line-clamp-2 leading-relaxed font-medium">{item.desc}</div>
             </div>
-            <a href={item.siteurl} target="_blank" rel="noopener noreferrer" class="flex btn-regular w-[3.25rem] rounded-lg bg-[var(--enter-btn-bg)] hover:bg-[var(--enter-btn-bg-hover)] active:bg-[var(--enter-btn-bg-active)] active:scale-95">
-              <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="transition text-[var(--primary)] text-4xl mx-auto iconify iconify--material-symbols" width="1em" height="1em" viewBox="0 0 24 24">
-                <path fill="currentColor" d="M12.6 12L8.7 8.1q-.275-.275-.275-.7t.275-.7t.7-.275t.7.275l4.6 4.6q.15.15.213.325t.062.375t-.062.375t-.213.325l-4.6 4.6q-.275.275-.7.275t-.7-.275t-.275-.7t.275-.7z"></path>
-              </svg>
-            </a>
-          </div>
+            <div class="ml-auto flex-shrink-0">
+              <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-[var(--primary)]/90 text-white shadow-lg group-hover:scale-110 transition-transform duration-300">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-6 h-6">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                </svg>
+              </span>
+            </div>
+          </a>
         ))}
       </div>
       <Markdown class="mt-2">
@@ -67,22 +60,30 @@ const items = [
       </Markdown>
     </div>
   </div>
-
-<!--在此处👇插入随机排列JS脚本 -->
-<script>
-window.addEventListener('DOMContentLoaded', () => {
-    const container = document.getElementById('friends-list');
-    if (!container) return;
-    const cards = Array.from(container.children);
-    // 洗牌算法
-    for (let i = cards.length - 1; i > 0; i--) {
-        const j = Math.floor(Math.random() * (i + 1));
-        [cards[i], cards[j]] = [cards[j], cards[i]];
+  <style>
+    .line-clamp-2 {
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
     }
-    // 重新插入
-    cards.forEach(card => container.appendChild(card));
-});
-</script>
-<!--在此处👆插入随机排列JS脚本 -->
+  </style>
 
+  <!-- giscus评论 -->
+<div style="margin-top: 20px;"></div>
+<script src="https://giscus.app/client.js"
+        data-repo="kmh1145/fuwari-comments"
+        data-repo-id="R_kgDOQcxbhA"
+        data-category="Announcements"
+        data-category-id="DIC_kwDOQcxbhM4CzA_-"
+        data-mapping="pathname"
+        data-strict="0"
+        data-reactions-enabled="1"
+        data-emit-metadata="0"
+        data-input-position="bottom"
+        data-theme="preferred_color_scheme"
+        data-lang="zh-CN"
+        crossorigin="anonymous"
+        async>
+</script>
 </MainGridLayout>
