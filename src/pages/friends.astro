@@ -1,6 +1,3 @@
-const friendsPost = await getEntry('spec', 'friends')
-const { Content } = await friendsPost.render()
-<MainGridLayout title={i18n(I18nKey.friends)} description={i18n(I18nKey.friends)}>
 const friendsPost = await getEntry("spec", "friends");
 
 if (!friendsPost) {
@@ -15,13 +12,6 @@ const items = [
     desc: 'The web framework for content-driven websites. ⭐️ Star to support our work!',
     siteurl: 'https://github.com/withastro/astro',
     tags: ['框架'],
-  },  
-  {
-    title: 'zyx的博客',
-    imgurl: 'https://avatars.githubusercontent.com/u/44914786?s=48&v=4',
-    desc: 'zyx的fuwari博客',
-    siteurl: 'https://zyx-blog.top',
-    tags: ['友链'],
   },
 ]
 ---
