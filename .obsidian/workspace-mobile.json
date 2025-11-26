@@ -13,7 +13,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "src/content/posts/first-article/index.md",
+                "file": "src/content/posts/first-article/3a7f1beb070f00766d5b5121e6b9ba14.png",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -48,14 +48,12 @@
             "id": "4c9f8f025e744f8a",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "image",
               "state": {
-                "file": "src/content/posts/first-article/index.md",
-                "mode": "source",
-                "source": false
+                "file": "src/content/posts/first-article/3a7f1beb070f00766d5b5121e6b9ba14.png"
               },
-              "icon": "lucide-file",
-              "title": "index"
+              "icon": "lucide-image",
+              "title": "3a7f1beb070f00766d5b5121e6b9ba14"
             }
           }
         ],
@@ -206,8 +204,8 @@
   },
   "active": "4c9f8f025e744f8a",
   "lastOpenFiles": [
-    "src/content/posts/first-article/Screenshot_2025-11-27-00-44-02-135_com.microsoft.emmx-edit.jpg",
     "src/content/posts/first-article/index.md",
+    "src/content/posts/first-article/Screenshot_2025-11-27-00-44-02-135_com.microsoft.emmx-edit.jpg",
     "src/content/posts/测试.md",
     "src/content/posts/obsidian-mobile/index.md",
     "src/content/posts/first-article/3a7f1beb070f00766d5b5121e6b9ba14.png",

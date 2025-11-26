@@ -2,7 +2,7 @@
 title: 第一篇用Obsidian在fuwari发布的文章
 published: 2025-11-27
 description: 感谢arch大佬的帮助，终于是理解了fuwari的用法
-image:
+image: Screenshot_2025-11-27-01-33-09-615_com.microsoft.emmx-edit.jpg
 tags:
   - fuwari
   - obsidian
