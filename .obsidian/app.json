@@ -1,0 +1,6 @@
+{
+  "attachmentFolderPath": "./",
+  "promptDelete": false,
+  "newFileLocation": "folder",
+  "newFileFolderPath": "src/content/posts"
+}
