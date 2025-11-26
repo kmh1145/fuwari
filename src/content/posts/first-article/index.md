@@ -2,7 +2,7 @@
 title: 第一篇用Obsidian在fuwari发布的文章
 published: 2025-11-27T00:34:40
 description: 感谢arch大佬的帮助，终于是理解了git、fuwari、Obsidian的用法
-image: obsidian-mobile-fuwari.png
+image:
 tags:
   - fuwari
   - obsidian
