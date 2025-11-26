@@ -1,7 +1,7 @@
 ---
 title: 第一篇用Obsidian在fuwari发布的文章
 published: 2025-11-27
-description: 感谢arch大佬的帮助，终于是理解了git、fuwari、Obsidian的用法
+description: 感谢arch大佬的帮助，终于是理解了fuwari的用法
 image:
 tags:
   - fuwari
@@ -12,8 +12,7 @@ lang: ""
 ---
 # 曾经的博客
 ## WordPress
-![[3a7f1beb070f00766d5b5121e6b9ba14.png]]
-刚开始的时候，`WordPress`丰富的功能和多样的模板深深吸引了我，但是随着使用时间的增加，古登堡编辑器和其缓慢的运行速度让我不得不放弃了它~~，还有服务器成本（bushi~~。
+![[3a7f1beb070f00766d5b5121e6b9ba14.png]]刚开始的时候，`WordPress`丰富的功能和多样的模板深深吸引了我，但是随着使用时间的增加，古登堡编辑器和其缓慢的运行速度让我不得不放弃了它~~，还有服务器成本（bushi~~。
 ## typecho
 在见到`typecho`后，他简洁的风格立刻让我有了更换到它的想法
 ![[Screenshot_2025-11-27-00-44-02-135_com.microsoft.emmx-edit.jpg]]
