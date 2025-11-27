@@ -150,6 +150,7 @@
         "state": {
           "type": "backlink",
           "state": {
+            "file": "src/content/posts/first-article/index.md",
             "collapseAll": false,
             "extraContext": false,
             "sortOrder": "alphabetical",
@@ -206,10 +207,12 @@
   },
   "active": "4c9f8f025e744f8a",
   "lastOpenFiles": [
+    "src/content/posts/wtf/index.md",
     "src/content/posts/测试.md",
+    "src/content/posts/wtf/a.jpeg",
+    "src/content/posts/wtf",
     "src/content/posts/first-article/index.md",
-    "src/content/posts/wtf.md",
-    "src/content/posts/a.jpeg",
+    "src/content/posts/first-article/Screenshot_2025-11-27-01-33-09-615_com.microsoft.emmx-edit.jpg",
     "src/content/posts/first-article/3a7f1beb070f00766d5b5121e6b9ba14.png",
     "src/content/posts/first-article/Screenshot_2025-11-27-00-44-02-135_com.microsoft.emmx-edit.jpg",
     "src/content/posts/obsidian-mobile/index.md",
