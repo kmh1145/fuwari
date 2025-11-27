@@ -79,9 +79,7 @@ const bannerOffset =
 	<head>
 
 		<title>{pageTitle}</title>
-		
         <script defer src="https://cloud.umami.is/script.js" data-website-id="51157e3d-063f-41a9-98da-d936991ed5d9"></script>
-        
 		<meta charset="UTF-8" />
 		<meta name="description" content={description || pageTitle}>
 		<meta name="author" content={profileConfig.name}>
