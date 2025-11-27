@@ -50,12 +50,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "src/content/posts/nnyun-lxc-jp-bgp/index.md",
+                "file": "public/template.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "index"
+              "title": "template"
             }
           }
         ],
@@ -205,10 +205,10 @@
       "bases:创建新数据库": false
     }
   },
-  "active": "21fe2552e661432a",
+  "active": "4c9f8f025e744f8a",
   "lastOpenFiles": [
-    "public/template.md",
     "src/content/posts/nnyun-lxc-jp-bgp/index.md",
+    "public/template.md",
     "src/content/posts/nnyun-vps-hk-boom/index.md",
     "src/content/posts/nnyun-lxc-jp-bgp",
     "src/content/posts/nnyun-lxc-hk-cn2/index.md",
