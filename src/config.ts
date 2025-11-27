@@ -51,8 +51,8 @@ export const navBarConfig: NavBarConfig = {
 			external: true, // Show an external link icon and will open in a new tab
 		},
 		{
-			name: "未命名",
-			url: "https://xb.zyx-blog.top", // Internal links should not include the base path, as it is automatically added
+			name: "统计",
+			url: "https://cloud.umami.is/share/IHmXa0TEz1PYtnUc", // Internal links should not include the base path, as it is automatically added
 			external: true, // Show an external link icon and will open in a new tab
 		},
 	],
