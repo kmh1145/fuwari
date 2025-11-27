@@ -4,9 +4,7 @@ published: 2025-11-27
 description: 不要学kmh1145
 image: ./a.jpeg
 tags:
-  - s
-  - b
-category: sb
+category: 杂谈
 draft: false
 lang: ""
 ---

@@ -2,7 +2,7 @@
 title:
 published: {{date}}T{{time}}
 description:
-image: ""
+image: ''
 tags: []
 category: ""
 draft: false
