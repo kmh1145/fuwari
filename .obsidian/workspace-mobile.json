@@ -50,12 +50,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "src/content/spec/about.md",
+                "file": "README.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "about"
+              "title": "README"
             }
           }
         ],
@@ -150,7 +150,7 @@
         "state": {
           "type": "backlink",
           "state": {
-            "file": "src/content/posts/first-article/index.md",
+            "file": "README.md",
             "collapseAll": false,
             "extraContext": false,
             "sortOrder": "alphabetical",
@@ -192,7 +192,7 @@
         }
       }
     ],
-    "currentTab": 0
+    "currentTab": 2
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -202,11 +202,13 @@
       "daily-notes:打开/创建今天的日记": false,
       "templates:插入模板": false,
       "command-palette:打开命令面板": false,
-      "bases:创建新数据库": false
+      "bases:创建新数据库": false,
+      "obsidian-git:Open Git source control": false
     }
   },
   "active": "21fe2552e661432a",
   "lastOpenFiles": [
+    "src/content/spec/about.md",
     "src/config.ts.bak",
     "src/layouts/2536135.tmp",
     "src/layouts/Layout.astro.bak",
