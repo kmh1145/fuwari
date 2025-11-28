@@ -11,7 +11,7 @@ draft: false
 lang: ""
 ---
 # 机器配置
-配置如图，实付款124¥（提交购买之后会有个抽奖减钱的），平均每月就10块多一点，性价比还是很高的。[活动页面](https://www.racknerd.com/BlackFriday/) *(可能需要科学才能加载出页面)* [同配置直接购买链接](https://my.racknerd.com/cart.php?a=confproduct&i=0))
+配置如图，实付款124¥（提交购买之后会有个抽奖减钱的），平均每月就10块多一点，性价比还是很高的。[活动页面](https://www.racknerd.com/BlackFriday/) *(可能需要科学才能加载出页面)* [同配置直接购买链接](https://my.racknerd.com/cart.php?a=confproduct&i=0)
 机房我选择的洛杉矶DC02机房，全国延迟表现还可以， `itdog` 测试如下：
 ![](index-1.png)
 由于写作时间为晚高峰，部分地区延迟较高，具体线路可看下面的报告。
