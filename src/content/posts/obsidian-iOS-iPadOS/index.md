@@ -25,7 +25,7 @@ lang: ""
 	1. 最后在.ssh目录下（root文件夹下，但是iOS文件管理看不到隐藏文件夹）得到了两个文件：id_rsa（私有秘钥）和id_rsa.pub（公有密钥）
 4. 再次查看显示公钥 `cat ~/.ssh/id_rsa.pub` 
 5. 选中公钥文本进行复制操作
-6. 配置公钥至github [配置地址]((https://github.com/settings/keys) 
+6. 配置公钥至github [配置地址](https://github.com/settings/keys) 
 	1. `Title` 随便取一个名字，如：key
 	2. `Key type` 选择 `Authentication Key` 
 	3. `Key` 中粘贴刚刚复制的公钥
