@@ -6,7 +6,7 @@ image: obsidian-mobile-fuwari.png
 tags:
   - fuwari
   - obsidian
-category: fuwari
+category: 教程
 draft: false
 lang: ""
 ---
