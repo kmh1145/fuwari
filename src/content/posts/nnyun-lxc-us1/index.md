@@ -10,7 +10,8 @@ category: 服务器测评
 draft: false
 lang: ""
 ---
-新买的母鸡，还没上架lxc，先看看测试吧。
+~~新买的母鸡，还没上架lxc~~ 先看看测试吧。
+现已上架，1-128M 4G硬盘 月流量100GB 仅需3r/月，[购买链接](https://nnyunidc.cn/cart?fid=1) 
 # 💻基本信息
 ```
 Basic System Information:
